@@ -1,0 +1,17 @@
+{
+  "policy": "Corrected confidence-only AGIR-DINO (PRIMARY)",
+  "accuracy": 0.6462882096069869,
+  "replay_rate": 0.5545851528384279,
+  "n_replayed": 635,
+  "beneficial_precision": 0.09133858267716535,
+  "beneficial_recall": 0.9508196721311475,
+  "harmful_intervention_rate": 0.8548387096774194,
+  "harmful_avoidance": 0.14516129032258063,
+  "bypass_accuracy": 0.8333333333333334,
+  "replayed_subset_accuracy": 0.49606299212598426,
+  "oracle_accuracy": 0.6951965065502184,
+  "oracle_recovery": 0.08196721311475226,
+  "n_beneficial": 61,
+  "n_harmful": 62,
+  "n_neutral": 1022
+}

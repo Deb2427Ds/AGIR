@@ -1,0 +1,34 @@
+{
+  "n": 200,
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "direct_latency_sec": {
+    "mean": 0.10650602579116822,
+    "median": 0.10589110851287842,
+    "p95": 0.131224250793457
+  },
+  "corrected_agir_latency_sec": {
+    "mean": 0.36696051359176635,
+    "median": 0.4401136636734009,
+    "p95": 0.5966152071952819
+  },
+  "dino_always_latency_sec": {
+    "mean": 0.45569958329200744,
+    "median": 0.41932737827301025,
+    "p95": 0.5775792479515036
+  },
+  "agir_replay_count_n200": 108,
+  "agir_replay_rate_n200_subset": 0.54,
+  "full_validation_replay_rate": 0.5545851528384279,
+  "note_replay_rates": "N=200 efficiency-subset replay rate and N=1145 full-validation replay rate are reported separately and must never be conflated.",
+  "peak_vram_gb": 36.168945664,
+  "agir_overhead_vs_direct_pct": 244.54436813864834,
+  "agir_vs_dino_always_pct": 19.473151381702724,
+  "pct_evidence_generation_calls_avoided_vs_dino_always": 0.46,
+  "pct_dino_calls_avoided_vs_dino_always": 0.46,
+  "pct_replay_generation_calls_avoided_vs_dino_always": 0.46,
+  "agir_attribution_fallback_rate": 0.037037037037037035,
+  "dino_always_attribution_fallback_rate": 0.05,
+  "fallback_note": "Both AGIR and DINO-always fall back to attribution-based localization when Grounding DINO returns no box. This is the frozen canonical fallback rule, documented here rather than described as pure DINO timing.",
+  "gate_model_latency_note": "gate_model_latency is CPU-side LogisticRegression inference on a scaled scalar, measured separately from confidence_latency (the GPU forward pass computing the log-likelihood). Both are included in agir_total_latency.",
+  "supersedes": "Superseded old v8 efficiency numbers computed with get_initial_answer() before the gate (evidence phrase generated unconditionally): Direct=0.2285s, AGIR=0.4292s, DINO-always=0.4632s, AGIR vs Direct=+87.8%, AGIR vs DINO-always=7.3% faster. Those numbers violated the WHEN->WHERE->WHAT execution order and are retired."
+}

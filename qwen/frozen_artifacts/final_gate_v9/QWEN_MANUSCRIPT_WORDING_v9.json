@@ -1,0 +1,10 @@
+{
+  "superseded_efficiency_claims_do_not_use": [
+    "AGIR is 87.8% slower than Direct",
+    "AGIR is 7.3% faster than DINO-always"
+  ],
+  "corrected_efficiency_claim": "On the fixed N=200 efficiency subset, measured with the true adaptive WHEN->WHERE->WHAT execution order (evidence-phrase generation and Grounding DINO invoked only after the confidence gate elects to replay), corrected AGIR-DINO runs 244.5% slower than Direct and 19.5% faster than always-on DINO replay, avoiding evidence-generation, DINO, and replay-generation calls on 46.0% of samples.",
+  "primary_accuracy_claim": "On Qwen, the corrected confidence-only AGIR-DINO policy achieves 64.63% accuracy versus 64.19% for Direct. The difference is numerical rather than statistically supported under the predeclared multiplicity-controlled paired testing.",
+  "fused_comparison_nuance": "The unadjusted paired-bootstrap interval for AGIR-DINO versus always-on fused excludes zero, but the exact McNemar comparison does not survive the predeclared Holm correction (raw p=0.0595, Holm-adjusted p=0.1784); therefore we do not claim a statistically significant improvement.",
+  "do_not_write": "statistically indistinguishable from every baseline (without the fused-comparison nuance above)"
+}

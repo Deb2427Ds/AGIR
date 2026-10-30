@@ -1,0 +1,41 @@
+[
+  {
+    "method": "Direct",
+    "N": 1145,
+    "accuracy": 0.6419213973799127,
+    "status": "final_unchanged"
+  },
+  {
+    "method": "DINO-always",
+    "N": 1145,
+    "accuracy": 0.6410480349344978,
+    "status": "final_unchanged"
+  },
+  {
+    "method": "Always-on-fused",
+    "N": 1145,
+    "accuracy": 0.634061135371179,
+    "status": "final_unchanged"
+  },
+  {
+    "method": "AGIR-DINO (PRIMARY, corrected confidence, tau=0.35)",
+    "N": 1145,
+    "accuracy": 0.6462882096069869,
+    "threshold": 0.35,
+    "status": "PRIMARY_QWEN_POLICY"
+  },
+  {
+    "method": "AGIR-DINO (richer8, diagnostic ablation)",
+    "N": 1145,
+    "accuracy": 0.6489082969432315,
+    "threshold": 0.5,
+    "status": "diagnostic_ablation_only"
+  },
+  {
+    "method": "AGIR-DINO (V5 historical, old target, tau=0.6)",
+    "N": 1145,
+    "accuracy": 0.6489082969432315,
+    "threshold": 0.6,
+    "status": "OLD-TARGET HISTORICAL ABLATION \u2014 NOT PRIMARY"
+  }
+]

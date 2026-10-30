@@ -1,0 +1,23 @@
+{
+  "checklist": {
+    "primary_target_remains_beneficial_1_harmful_0_neutral_0": true,
+    "tau_remains_0.35_not_retuned": true,
+    "frozen_n1145_predictions_unchanged": true,
+    "direct_timing_answer_generation_only": true,
+    "direct_timing_no_evidence_phrase": true,
+    "agir_evidence_only_when_gate_replayed_true": true,
+    "agir_executes_gate_before_evidence_generation": true,
+    "dino_always_generates_evidence_every_sample": true,
+    "dino_always_does_not_compute_gate": true,
+    "same_fixed_n200_ids_used_all_policies": true,
+    "cuda_sync_used_around_timed_gpu_work": true,
+    "n200_and_full_validation_replay_rates_reported_separately": true,
+    "old_v8_efficiency_numbers_marked_superseded": true,
+    "bootstrap_cis_labeled_unadjusted": true,
+    "holm_attached_to_mcnemar_family_only": true,
+    "richer8_remains_diagnostic_only": true,
+    "historical_v5_remains_legacy_only": true
+  },
+  "all_pass": true,
+  "failed_items": []
+}

@@ -1,0 +1,21 @@
+{
+  "backbone": "Qwen2.5-VL-7B-Instruct",
+  "dataset": "A-OKVQA",
+  "split": "validation",
+  "N": 1145,
+  "gate_type": "LogisticRegression(class_weight='balanced')",
+  "feature_list": [
+    "answer_confidence"
+  ],
+  "target_definition": "beneficial=1, harmful=0, neutral=0",
+  "train_dev_split_seed": 42,
+  "train_N": 8000,
+  "dev_N": 2000,
+  "selected_tau": 0.35,
+  "threshold_selection_rule": "max dev policy accuracy -> max harmful_avoidance -> min replay_rate -> max tau",
+  "gate_model_bundle_sha256": "ea687fc61e87fb9983123f7764158aad7b1b49c367fe12f90eb9f7bb412cce0f",
+  "validation_replay_count": 635,
+  "validation_replay_rate": 0.5545851528384279,
+  "validation_accuracy": 0.6462882096069869,
+  "status": "PRIMARY_QWEN_POLICY"
+}

@@ -1,0 +1,86 @@
+{
+  "comparisons": [
+    {
+      "comparison": "CorrectedAGIR-DINO_vs_Direct",
+      "mcnemar": {
+        "table": [
+          [
+            682,
+            58
+          ],
+          [
+            53,
+            352
+          ]
+        ],
+        "statistic": 53.0,
+        "raw_pvalue": 0.704379315424892,
+        "holm_adjusted_pvalue": 0.704379315424892,
+        "significant_holm": false
+      },
+      "bootstrap": {
+        "diff_pp": 0.43668122270742354,
+        "ci_95_unadjusted_pp": [
+          -1.3973799126637554,
+          2.1834061135371177
+        ],
+        "ci_excludes_zero_unadjusted": false
+      }
+    },
+    {
+      "comparison": "CorrectedAGIR-DINO_vs_DINO-always",
+      "mcnemar": {
+        "table": [
+          [
+            731,
+            9
+          ],
+          [
+            3,
+            402
+          ]
+        ],
+        "statistic": 3.0,
+        "raw_pvalue": 0.14599609375,
+        "holm_adjusted_pvalue": 0.2919921875,
+        "significant_holm": false
+      },
+      "bootstrap": {
+        "diff_pp": 0.5240174672489083,
+        "ci_95_unadjusted_pp": [
+          -0.08733624454148471,
+          1.1353711790393013
+        ],
+        "ci_excludes_zero_unadjusted": false
+      }
+    },
+    {
+      "comparison": "CorrectedAGIR-DINO_vs_Always-on-fused",
+      "mcnemar": {
+        "table": [
+          [
+            709,
+            31
+          ],
+          [
+            17,
+            388
+          ]
+        ],
+        "statistic": 17.0,
+        "raw_pvalue": 0.05946337525377034,
+        "holm_adjusted_pvalue": 0.17839012576131102,
+        "significant_holm": false
+      },
+      "bootstrap": {
+        "diff_pp": 1.222707423580786,
+        "ci_95_unadjusted_pp": [
+          0.08733624454148471,
+          2.3580786026200875
+        ],
+        "ci_excludes_zero_unadjusted": true
+      }
+    }
+  ],
+  "note": "Holm correction is applied to the McNemar p-value family only. The paired bootstrap CIs are unadjusted 95% intervals and are reported alongside, not merged with, the Holm-adjusted McNemar significance flags. A bootstrap CI excluding zero does not by itself constitute a multiplicity-controlled significance claim."
+}

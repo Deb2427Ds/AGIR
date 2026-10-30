@@ -1,0 +1,49 @@
+{
+  "target_definition": "beneficial=1, harmful=0, neutral=0",
+  "excluded_features": [
+    "branch_agreement (leaked, requires post-replay information)"
+  ],
+  "confidence_only": {
+    "features": [
+      "answer_confidence"
+    ],
+    "model_type": "LogisticRegression(class_weight='balanced')",
+    "selected_threshold": 0.35,
+    "dev_policy_accuracy": 0.5711666666666666,
+    "model_sha256": "ea687fc61e87fb9983123f7764158aad7b1b49c367fe12f90eb9f7bb412cce0f"
+  },
+  "richer8": {
+    "features": [
+      "answer_confidence",
+      "dino_max_score",
+      "num_dino_boxes",
+      "attribution_score",
+      "fusion_mean_pairwise_iou",
+      "answer_length",
+      "num_valid_experts",
+      "fused_box_area_ratio"
+    ],
+    "model_type": "RandomForestClassifier(n_estimators=200, max_depth=5, random_state=42)",
+    "selected_threshold": 0.5,
+    "dev_policy_accuracy": 0.5723333333333332,
+    "model_sha256": "eb014d6fb735ac50c028a877836ae665fdde049ea04c8ee1f017c70288706bdf"
+  },
+  "split_seed": 42,
+  "train_N": 8000,
+  "dev_N": 2000,
+  "class_counts": {
+    "train": {
+      "beneficial": 702,
+      "harmful": 707,
+      "neutral": 6591
+    },
+    "dev": {
+      "beneficial": 176,
+      "harmful": 189,
+      "neutral": 1635
+    }
+  },
+  "threshold_selection_rule": "max dev policy accuracy -> max harmful_avoidance -> min replay_rate -> max tau",
+  "frozen_direct_sha256": "add1cafa83dfe53291c292bcbe7baecf41a28b6e9dd453101e9db0296b57e66f",
+  "frozen_dino_sha256": "3d2072ece5fc7b17d9a9b229a34e234c26857f0dec058ff816f5080db7eef9c4"
+}

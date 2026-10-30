@@ -1,0 +1,21 @@
+{
+  "n": 500,
+  "mean_c_del": 0.8190087274504767,
+  "mean_c_irr": 0.33856799728094483,
+  "mean_diff_c_del_minus_c_irr": 0.48044073016953187,
+  "diff_95ci": [
+    0.40492965278055054,
+    0.5592260250063773
+  ],
+  "proportion_c_del_gt_c_irr": 0.678,
+  "mean_comprehensiveness": 0.8190087274504767,
+  "mean_sufficiency": 0.4850153788512398,
+  "mean_deletion_auc": -0.5732137849295862,
+  "mean_insertion_auc": -1.0131861079080613,
+  "metric_directions": {
+    "comprehensiveness": "higher = better (more reliance on evidence)",
+    "sufficiency": "lower = better (region alone is more sufficient)",
+    "deletion_auc": "lower = stronger causal evidence",
+    "c_del_vs_c_irr": "C_del > C_irr = faithful explanation"
+  }
+}
