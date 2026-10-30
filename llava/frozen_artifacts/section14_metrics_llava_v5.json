@@ -1,0 +1,18 @@
+{
+  "N": 1145,
+  "tau": 0.95,
+  "intervention_rate": 0.0,
+  "beneficial_precision": null,
+  "beneficial_recall": 0.0,
+  "harmful_avoidance": 1.0,
+  "harmful_intervention_rate": 0.0,
+  "direct_accuracy": 0.6526928675400291,
+  "dino_always_accuracy": 0.6346433770014556,
+  "agir_dino_accuracy": 0.6526928675400291,
+  "oracle_accuracy_direct_dino": 0.6759825327510917,
+  "oracle_recovery": 0.0,
+  "n_beneficial": 39,
+  "n_harmful": 65,
+  "n_neutral": 1041,
+  "interpretation_note": "The LLaVA policy abstains on all validation samples, trivially avoiding harmful replay but also recovering none of the potentially beneficial interventions. harmful_avoidance=100% is a trivial consequence of abstention, not evidence that the gate is accurate."
+}

@@ -1,0 +1,29 @@
+{
+  "AGIR-DINO_vs_Direct": {
+    "comparison": "AGIR-DINO_vs_Direct",
+    "diff_pp": 0.0,
+    "ci_95_unadjusted_pp": [
+      0.0,
+      0.0
+    ],
+    "ci_excludes_zero_unadjusted": false
+  },
+  "AGIR-DINO_vs_DINO-always": {
+    "comparison": "AGIR-DINO_vs_DINO-always",
+    "diff_pp": 1.804949053857351,
+    "ci_95_unadjusted_pp": [
+      0.5240174672489082,
+      3.14410480349345
+    ],
+    "ci_excludes_zero_unadjusted": true
+  },
+  "AGIR-DINO_vs_Always-on-fused": {
+    "comparison": "AGIR-DINO_vs_Always-on-fused",
+    "diff_pp": 0.6113537117903932,
+    "ci_95_unadjusted_pp": [
+      -0.7278020378457059,
+      1.9505094614264922
+    ],
+    "ci_excludes_zero_unadjusted": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "n": 500,
+  "mean_c_del": 0.3633685969511668,
+  "mean_c_irr": 0.03547221708297729,
+  "mean_diff_c_del_minus_c_irr": 0.3278963798681895,
+  "diff_95ci_bootstrap": [
+    0.28212753577232363,
+    0.3776922977844874
+  ],
+  "proportion_c_del_gt_c_irr": 0.73,
+  "mean_comprehensiveness": 0.3633685969511668,
+  "mean_sufficiency": 0.1361404757499695,
+  "relevant_region_source": "DINO replay box (or attribution fallback if DINO returned no box) \u2014 NOT fused"
+}

@@ -1,0 +1,36 @@
+{
+  "n": 200,
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "execution_order": "answer -> confidence -> gate -> (evidence+DINO+replay only if gate fires)",
+  "null_convention": "AGIR conditional-component latencies are 0.0 (not null) when the gate does not fire on that sample",
+  "supersedes": "efficiency_llava_v4_summary.json \u2014 that timing used get_initial_answer(), which always generated the evidence phrase even for Direct and even when the gate never fired",
+  "direct_latency_sec": {
+    "mean": 0.1909427402950132,
+    "median": 0.19262929800004258,
+    "p95": 0.22122655999988858
+  },
+  "agir_dino_latency_sec": {
+    "mean": 0.3839497733850203,
+    "median": 0.3879903485002387,
+    "p95": 0.43897971499993654
+  },
+  "dino_always_latency_sec": {
+    "mean": 0.8134134981000113,
+    "median": 0.7500541994999139,
+    "p95": 1.8245473199497835
+  },
+  "direct_peak_vram_gb": 32.228366848,
+  "agir_peak_vram_gb": 32.853767168,
+  "dino_always_peak_vram_gb": 39.579076096,
+  "agir_replay_count_n200": 0,
+  "agir_replay_rate_n200": 0.0,
+  "full_validation_replay_rate": 0.0,
+  "note_replay_rates": "the n=200 efficiency-subset replay rate and the N=1145 full-validation replay rate are reported separately and never conflated; both are 0.0 under tau=0.95.",
+  "agir_overhead_vs_direct_pct": 101.0811056716817,
+  "agir_speedup_vs_dino_always_pct": 52.797713059611326,
+  "evidence_generation_calls_avoided_vs_dino_always": 200,
+  "dino_calls_avoided_vs_dino_always": 200,
+  "replay_generation_calls_avoided_vs_dino_always": 200,
+  "note_calls_vs_latency": "100% of grounding/replay CALLS are avoided under abstention, but this is NOT the same as a 100% latency reduction \u2014 Direct's own answer generation and the gate overhead are still paid on every sample.",
+  "interpretation_note": "The learned LLaVA policy avoids all grounding/replay calls, but still pays the cost of computing the answer-confidence gate. Consequently, Direct inference remains the practically preferable deployment mode on this backbone if the frozen gate always abstains."
+}

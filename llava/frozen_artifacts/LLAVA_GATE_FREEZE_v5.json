@@ -1,0 +1,43 @@
+{
+  "backbone_model_id": "llava-hf/llava-v1.6-mistral-7b-hf",
+  "target_definition": "beneficial=1, harmful=0, neutral=0",
+  "feature_list": [
+    "answer_confidence"
+  ],
+  "split_seed": 0,
+  "train_N": 8001,
+  "dev_N": 1999,
+  "train_dev_ids_file": "llava_gate_split_ids.json",
+  "train_dev_overlap": 0,
+  "threshold_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "selected_threshold": 0.95,
+  "selected_threshold_in_predeclared_grid": true,
+  "selection_rule": "max dev end-to-end policy accuracy -> max harmful_avoidance -> min replay_rate -> max tau, restricted to the predeclared grid (the tau=1.01 zero-replay sentinel is reported separately as NO_REPLAY_BASELINE and is never a tau candidate)",
+  "classifier_hyperparameters": "LogisticRegression(class_weight='balanced', max_iter=1000)",
+  "gate_model_sha256": "6606c578f3e816b7b9266d8f487630cc6fbe8ea1db2aba01dad77af6a62bc706",
+  "scaler_sha256": "f948fdc4b691cf962edbd32fbddf913dfd43e60ac84f3a5233110a4d4c1fde39",
+  "validation_cache_sha256": "39a8d72e7ad2a3146b640a6c19d9473b14f45e5cb34410d3ec1cd303d52493cf",
+  "validation_max_gate_probability": 0.5390200868945554,
+  "validation_replay_count": 0,
+  "validation_replay_rate": 0.0
+}

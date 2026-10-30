@@ -1,0 +1,12 @@
+{
+  "tau": 0.5,
+  "status": "SUPERSEDED \u2014 historical operating-point ablation, not the frozen primary policy",
+  "agir_dino_accuracy": 0.6363901018922853,
+  "vs_direct_pp": -1.6303,
+  "vs_direct_ci_pp": [
+    -2.5619,
+    -0.786
+  ],
+  "vs_direct_holm_p": 0.00426,
+  "reason_superseded": "dev-optimal threshold search selects zero-replay instead"
+}

@@ -1,0 +1,10 @@
+{
+  "N": 400,
+  "error_count": 0,
+  "mean_iou": 0.715815745580167,
+  "acc_at_0.5": 0.7575,
+  "pointing_game_accuracy": 0.8125,
+  "mean_area_fraction": 0.23070953007424652,
+  "dino_no_box_rate": 0.0050000000000000044,
+  "note": "Queried Grounding DINO directly with the true RefCOCOg referring expression, NOT a LLaVA-generated surrogate phrase via multi_expert_grounding's evidence_text pathway."
+}

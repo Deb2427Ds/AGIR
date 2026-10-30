@@ -1,0 +1,26 @@
+[
+  {
+    "comparison": "AGIR-DINO_vs_Direct",
+    "raw_pvalue": 1.0,
+    "holm_adjusted_pvalue": 1.0,
+    "significant_holm": false
+  },
+  {
+    "comparison": "AGIR-DINO_vs_DINO-always",
+    "raw_pvalue": 0.012812402175831373,
+    "holm_adjusted_pvalue": 0.03843720652749412,
+    "significant_holm": true
+  },
+  {
+    "comparison": "AGIR-DINO_vs_Always-on-fused",
+    "raw_pvalue": 0.5764306261883931,
+    "holm_adjusted_pvalue": 1.0,
+    "significant_holm": false
+  },
+  {
+    "comparison": "Fused_vs_DINO",
+    "raw_pvalue": 0.009475304279476404,
+    "holm_adjusted_pvalue": 0.03790121711790562,
+    "significant_holm": true
+  }
+]

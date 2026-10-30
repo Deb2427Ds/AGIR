@@ -1,0 +1,43 @@
+[
+  {
+    "method": "Direct",
+    "N": 1145,
+    "accuracy": 0.6526928675400291,
+    "status": "final"
+  },
+  {
+    "method": "DINO-always",
+    "N": 1145,
+    "accuracy": 0.6346433770014556,
+    "status": "final"
+  },
+  {
+    "method": "AGIR-DINO",
+    "N": 1145,
+    "accuracy": 0.6526928675400291,
+    "threshold": 0.95,
+    "status": "final",
+    "note": "zero-replay under actual applied gate, equals Direct"
+  },
+  {
+    "method": "Always-on-fused",
+    "N": 1145,
+    "accuracy": 0.6465793304221251,
+    "status": "branch_mean_only",
+    "note": "unconditional fused-replay on every sample, no gate \u2014 distinct from AGIR-Fused below"
+  },
+  {
+    "method": "AGIR-Fused (tau=0.50, historical ablation)",
+    "N": 1145,
+    "accuracy": 0.6439592430858806,
+    "status": "superseded_historical",
+    "threshold": 0.5,
+    "note": "gated policy: Direct + fused-replay on the ~40.3% the gate fired for, per canonical facts"
+  },
+  {
+    "method": "AGIR-DINO (tau=0.50, historical)",
+    "N": 1145,
+    "accuracy": 0.6363901018922853,
+    "status": "superseded_historical"
+  }
+]
