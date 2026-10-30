@@ -1,0 +1,30 @@
+{
+  "task": "C \u2014 Qwen replay-budget-matched random gate",
+  "n_validation": 1145,
+  "replay_budget": 635,
+  "n_draws": 10000,
+  "seed": 42,
+  "frozen_agir_mean_soft_accuracy": 0.6462882096069869,
+  "direct_mean_soft_accuracy": 0.6419213973799127,
+  "frozen_agir_minus_direct_pp": 0.4366812227074135,
+  "random_policy_mean_soft_accuracy": {
+    "mean": 0.6414151091703058,
+    "std": 0.004799271499893752,
+    "p5": 0.6331877729257642,
+    "p50": 0.6410480349344978,
+    "p95": 0.6489082969432315
+  },
+  "frozen_agir_minus_random_mean_pp": 0.4873100436681099,
+  "fraction_of_random_draws_agir_beats": 0.8221,
+  "n_harmful_total_in_validation": 62,
+  "n_beneficial_total_in_validation": 61,
+  "n_neutral_total_in_validation": 1022,
+  "random_harmful_avoidance": {
+    "mean": 0.4456209677419355,
+    "p5": 0.33870967741935487,
+    "p50": 0.4516129032258065,
+    "p95": 0.5483870967741935
+  },
+  "note": "Randomization spread is NOT a sampling CI over new datasets; it is the distribution of a fixed-budget random selector evaluated repeatedly on the same frozen validation scores. This is a post-hoc diagnostic on an already-examined benchmark, not a confirmatory test, and must not be used to alter the gate or threshold.",
+  "llava_note": "LLaVA primary replay budget is 0/1145 at tau*=0.95; a budget-matched random selector at budget 0 is identical to Direct with zero variance -> TRIVIAL_COMPARATOR_NOT_INFORMATIVE. Not recomputed here. The historical tau=0.50 budget (462/1145) may optionally be reported as EXPLORATORY/HISTORICAL context only."
+}

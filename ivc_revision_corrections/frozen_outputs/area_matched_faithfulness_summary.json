@@ -1,0 +1,13 @@
+{
+  "task": "B \u2014 Qwen area-/shape-matched faithfulness controls",
+  "n_total": 500,
+  "n_eligible": 326,
+  "n_ineligible": 174,
+  "mean_M_i": 0.6052713542952926,
+  "median_M_i": 0.15918145701289177,
+  "share_positive": 0.7300613496932515,
+  "bootstrap_95ci": [
+    0.5012650613946336,
+    0.712139952754852
+  ]
+}
